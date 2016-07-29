@@ -162,7 +162,28 @@ div.paper pre {
   ga('send', 'pageview');
 
 </script>
- 
+ <title>JS</title>
+<script type="text/javascript">
+    function countdown ()
+    {
+        var end = 1469875680000;
+        var now = Date.parse(new Date());
+          
+        var m = Math.round ((end - now) / 1000);
+        var day = parseInt (m / 24 / 3600);
+        var hours = parseInt ((m % (3600 * 24)) / 3600);
+        var minutes = parseInt ((m % 3600) / 60);
+        var seconds = m % 60;
+          
+  
+        document.getElementById ("clock").innerHTML = day + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ";
+        setTimeout ('countdown()', 1000);
+    }
+    window.onload = function ()
+    {
+        countdown ();
+    }
+</script>
 <body background="snh48.png">
 
 
@@ -193,6 +214,9 @@ I will join <a href='http://www.ntu.edu.tw/english/index.html'>National Taiwan U
 <br>
 <br>
 <font color="#ff0000"><b>NEW!</b></font> &nbsp; The general election of SNH48, my favorite idol group, will be held at 10:48 UTC in July 30, 2016. Here is the <a href='http://live.bilibili.com/48'>link</a> to the live broadcast.
+<br>
+<br>
+<span id="clock"></span>
 <br>
 </div>
 </div>
