@@ -32,6 +32,8 @@ a:focus, a:hover {
 a.paper {
   font-weight: bold;
   font-size: 12pt;
+  text-align:justify; 
+  text-justify:inter-ideograph;
 }
 
 b.paper {
@@ -51,6 +53,7 @@ body {
   font-family: Lato, Verdana, Helvetica, sans-serif;
   font-size: 14px;
   background: #eee;
+
 }
 
 h2 {
@@ -163,6 +166,31 @@ div.paper pre {
   ga('send', 'pageview');
 
 </script>
+
+
+ <title>JS</title>
+<script type="text/javascript">
+    function countdown ()
+    {
+        var end = 1469875680000;
+        var now = Date.parse(new Date());
+          
+        var m = Math.round ((end - now) / 1000);
+        var day = parseInt (m / 24 / 3600);
+        var hours = parseInt ((m % (3600 * 24)) / 3600);
+        var minutes = parseInt ((m % 3600) / 60);
+        var seconds = m % 60;
+          
+  
+        document.getElementById ("clock").innerHTML = day + " Days " + hours + " Hours " + minutes + " Minutes " + seconds + " Seconds ";
+        setTimeout ('countdown()', 1000);
+    }
+    window.onload = function ()
+    {
+        countdown ();
+    }
+</script>
+
 <body>
 
 
@@ -172,29 +200,34 @@ div.paper pre {
 <div style="padding-left: 12em; vertical-align: top; height: 120px;"><span style="line-height: 150%; font-size: 20pt;">Kaipeng Zhang</span><br />
 <span><strong>M.S. candidate</strong></span><br />
 <span>School of Computer Science and Information Engineering, National Taiwan University, Taiwan</span><br />
-<span><strong>Email  </strong>: kp[dot]zhang[at]siat[dot]ac[dot]cn</span> <br /> 
+<span><strong>Email  </strong> </span>r05944047[at]ntu[dot]edu[dot]tw<br /> 
+ &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<S>kp[dot]zhang[at]siat[dot]ac[dot]cn</S><br/>
 <!--<span><alert>I am applying for M.S./Ph.D. program in computer vision and machine learning now.</alert></span>-->
 </div>
 </div>
 </div>
 <!--<div style="clear: both; background-color: #fff; margin-top: 1.5em; padding: .2em; padding-left: .3em;">-->
 
-<div style="clear: both;">
+<div style="clear: both;text-align:justify; text-justify:inter-ideograph;">
 <div class="section">
 <h2>About Me (<a href='kpzhang_cv.pdf'>CV</a>)</h2>
 <div class="paper">
-I got my B.Eng. degree in the <a href = 'http://cst.dhu.edu.cn/'>School of Computer Science &amp; Technology</a>, <a href='http://www.dhu.edu.cn/'>Donghua University</a> in June 2016, and now I am a research assistant at <a href='http://mmlab.ie.cuhk.edu.hk/people.html#shenzhen'>MMLAB of the Chinese University of Hong Kong at Shenzhen</a> under the supervision of Prof. <a href='http://dblp.uni-trier.de/pers/hd/l/Li:Zhifeng'>Zhifeng Li</a> and Prof. <a href='http://mmlab.siat.ac.cn/yuqiao/'>Yu Qiao</a>. I am fortunate to work closely with <a href='http://personal.ie.cuhk.edu.hk/~zz013/'>Zhanpeng Zhang</a> and <a href='http://ydwen.github.io'>Yandong Wen</a>.
-<br> 
-<br> 
-My research interest mainly lies in computer vision, deep learning, and face analysis.
+
+I am a master student of department of <a href = 'https://www.csie.ntu.edu.tw/main.php'>Computer Science and Information Engineering</a>, <a href='http://www.ntu.edu.tw/english/index.html'>National Taiwan University</a> supervised by Prof. <a href='http://www.csie.ntu.edu.tw/~winston/'>Winston Hsu</a>.
 <br>
+</br>
+Before coming to NTU, I got my B.Eng. degree in the <a href = 'http://cst.dhu.edu.cn/'>College of Computer Science &amp; Technology</a>, <a href='http://www.dhu.edu.cn/'>Donghua University</a> in June 2016. Besides, I was a research assistant at <a href='http://mmlab.ie.cuhk.edu.hk/people.html#shenzhen'>MMLAB of the Chinese University of Hong Kong at Shenzhen</a> under the supervision of Prof. <a href='http://dblp.uni-trier.de/pers/hd/l/Li:Zhifeng'>Zhifeng Li</a> and Prof. <a href='http://mmlab.siat.ac.cn/yuqiao/'>Yu Qiao</a>.   
+<br> 
+</br> 
+My research interest mainly lies in computer vision, deep learning, and face analysis. I am fortunate to work closely with <a href='http://personal.ie.cuhk.edu.hk/~zz013/'>Zhanpeng Zhang</a> and <a href='http://ydwen.github.io'>Yandong Wen</a>.
 <br>
-I will join <a href='http://www.ntu.edu.tw/english/index.html'>National Taiwan University</a> as a CS M.S. student under the supervision of Prof. <a href='http://www.csie.ntu.edu.tw/~winston/'>Winston Hsu</a> in Sept. 2016.
+
+
 </div>
 </div>
 </div>
 
-<div style="clear: both;">
+<div style="clear: both;text-align:justify; text-justify:inter-ideograph;">
 <div class="section">
   <h2>News</h2>
   <div class="paper">
@@ -210,7 +243,7 @@ I will join <a href='http://www.ntu.edu.tw/english/index.html'>National Taiwan U
 </div>
 </div>
 
-<div style="clear: both;">
+<div style="clear: both;text-align:justify; text-justify:inter-ideograph;">
 <div class="section">
 <h2 id="confpapers">Publications</h2>
 
